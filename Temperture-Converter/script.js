@@ -14,7 +14,7 @@ cel.addEventListener("input", function () {
 
 far.addEventListener("input", function () {
   let f = this.value;
-  let c = (f * 9) / 5 + 32;
+  let c = [(f-32)*5]/9;
   if (!Number.isInteger(c)) {
     c = c.toFixed(3);
   }
